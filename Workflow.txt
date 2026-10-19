@@ -1,0 +1,53 @@
+Workflow end-to-end: SQL + Python + Power BI
+
+Aku menyarankan urutan kerja berikut. Karena tujuanmu adalah Data Analyst, setiap tools harus punya fungsi yang jelas, bukan digunakan hanya supaya daftar tools terlihat banyak.
+
+Tahap 1 — Business Understanding & Data Profiling
+
+Tools: Python, Jupyter Notebook
+
+Unduh dataset, pahami data dictionary, periksa grain, jumlah baris, tipe data, missing values, duplikasi, dan rentang tanggal. Tentukan aturan untuk canceled orders dan penghitungan keterlambatan.
+
+Output: 01_data_profiling.ipynb dan laporan kualitas data.
+
+Tahap 2 — Data Preparation
+
+Tools: Python, pandas
+
+Perbaiki tipe data, validasi tanggal dan angka, periksa duplikasi, serta tangani nilai yang tidak valid. Simpan hasilnya sebagai dataset terproses. Jangan menghapus data hanya karena nilainya terlihat tidak biasa; investigasi dulu.
+
+Output: notebook preparation dan file data terproses.
+
+Tahap 3 — SQL Business Analysis
+
+Tools: PostgreSQL
+
+Muat data ke PostgreSQL, validasi jumlah record, lalu buat query untuk KPI, delivery performance, perbandingan wilayah, tren bulanan, dan profitabilitas.
+
+Output: schema database, query SQL yang terorganisasi, dan hasil validasi.
+
+Tahap 4 — Exploratory Data Analysis
+
+Tools: Python, pandas, matplotlib
+
+Selidiki distribusi keterlambatan, pola antarwilayah, perbedaan metode pengiriman, tren, dan hubungan dengan profit. Gunakan grafik untuk menemukan pola yang kemudian diverifikasi dengan SQL.
+
+Output: notebook EDA, grafik pendukung, dan daftar temuan sementara.
+
+Tahap 5 — Data Modeling & Dashboard
+
+Tools: Power BI, DAX
+
+Hubungkan Power BI ke PostgreSQL atau gunakan hasil query SQL yang sudah divalidasi. Bangun model data dan measure DAX, lalu susun visualisasi yang menjawab pertanyaan bisnis.
+
+Output: file .pbix, screenshot dashboard, dan dokumentasi KPI.
+
+Tahap 6 — Business Report
+
+Tools: Markdown, GitHub
+
+Rangkum masalah, metode, temuan yang terukur, implikasi bisnis, rekomendasi, keterbatasan dataset, dan cara mengulang analisis.
+
+Output: README profesional dan laporan insight akhir.
+
+Alurnya bukan berarti semua proses harus berjalan satu arah tanpa kembali. Jika hasil SQL berbeda dengan Python atau KPI Power BI, kamu perlu kembali memeriksa definisi dan kualitas datanya.

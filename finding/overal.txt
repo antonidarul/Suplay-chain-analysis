@@ -1,0 +1,24 @@
+
+### overall ###
+total order item sebesar 65752 order telat 57.31 % shipping mode first class 0 ontime 
+dengan delay rate 100% rata rata delay adalah 1 hari
+region central asia late rate 60.04%
+
+### methode pengiriman###
+first klas terlambat 100%,ontime(0) dengan rata rata keterlambatan 1 hari, dan second class psling lambat yaitu 4 hari 
+standart class mencatat order tertinggi 39324 tetapi rate keterlambatan paling rendah di 39.85% dengan rata rata keterlambatan 
+standart class (2 hari), tertinggi second class 4 hari , first class dan same day selama 1 hari. maka layanan yang lebih cepat tidak membuktikan 
+pengiriman on time 
+
+### region ### 
+market afrika yang berada di central late delivery sebesar 60%, rata rata order paling lambat di central asia 1.74.
+masalah keterlambatan tersebar dibanyak wilayah semua tercatat rata rata keterlambatan diatas 1 hari,
+region yang memiliki volume order tertinggi western europe 10010 order juga memiliki tingkat keterlambatan tinggi menyentuh 58.40%,
+dan diseluruh wilayah regional keterlambatan first class 100%
+
+### delivery ###
+dari bulan ke bulan rate delivery rate menunjukkan fluktuasi yang relatif stabil 54% hingga 60%,
+delay order meningkat seiring naiknya volume order total,late delivery rate tertinggi berada di 2016 bulan 6 keterlambatan mencapai 58,86%, rata rata hari keterlambatan sangat stabil di kisaran 1.56 hingga 1.65 di setiap bulan 
+
+### Profitability Analysis ### 
+profit per order terlambat(64.35) dan tidak terlambat(64.78) hanya memiliki selisih 0.43 hampir tidak ada perbedaan. total profit terlambat 2319553.26 memberikan profit yang lebih tinggi dibanding yang tidak terlambat 1739269.83,Second Class di wilayah Eastern Asia dan Southeast Asia mencatatkan risiko ganda paling parah . Kategori Lacrosse dan Tennis & Racquet mengalami tingkat keterlambatan tertinggi (65%–66%) dengan rasio kerugian order di atas 10%

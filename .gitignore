@@ -1,0 +1,10 @@
+# Atau jika ingin lebih spesifik mendefinisikan jalurnya:
+/Data/Raw/DataCoSupplyChainDataset.csv
+/Data/Processed/dataco_cleaned.csv
+
+# Mengabaikan folder virtual environment Python (jika ada)
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc

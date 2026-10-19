@@ -1,0 +1,29 @@
+
+1. Statistik Deskriptif (Meringkas & Menggambarkan Data)
+
+Metode ini digunakan untuk merangkum data historis agar mudah dibaca dan dipahami:
+• Ukuran Pemusatan Data (Central Tendency):
+	• Mean (Rata-rata): Nilai bagi dari jumlah total data dibagi banyaknya data.
+	• Median: Nilai tengah setelah data diurutkan.
+	• Modus: Nilai yang paling sering muncul dalam dataset.
+• Ukuran Persebaran Data (Dispersion):
+	• Range (Jangkauan): Selisih antara nilai tertinggi dan terendah.
+	• Varians & Standar Deviasi: Mengukur seberapa jauh sebaran data dari nilai rata-ratanya.
+	• Percentile / Quartile: Membagi data menjadi beberapa bagian yang sama besar (misalnya melihat kuartil penjualan).
+• Deteksi Anomali (Outlier): Mengidentifikasi data yang menyimpang terlalu jauh dari pola umum menggunakan alat bantu seperti Box Plot.
+
+2. Statistik Inferensial (Menarik Kesimpulan & Prediksi)
+
+Metode ini digunakan untuk mengambil kesimpulan atau membuat keputusan terhadap populasi yang lebih luas berdasarkan data sampel:
+• Distribusi Probabilitas: Memahami pola sebaran data (seperti distribusi normal atau bell curve) agar tidak salah membaca probabilitas.
+• Pengujian Hipotesis (Hypothesis Testing): Menguji apakah suatu asumsi benar atau salah menggunakan konsep seperti p-value, t-test, atau ANOVA.
+• Korelasi & Regresi:
+	• Korelasi: Mengukur kekuatan hubungan antara dua variabel (misal: hubungan antara harga produk dan jumlah pembeli).
+	• Regresi Linear: Memodelkan hubungan sebab-akibat antarvariabel dan memprediksi tren di masa depan.
+• Sampling: Teknik mengambil sebagian kecil data (sampel) yang dapat mewakili seluruh populasi secara akurat.
+
+3. Pemahaman Tipe Data
+
+Sebelum menghitung, seorang data analyst harus mengenali jenis data yang dihadapi:
+• Data Kuantitatif (Numerik): Diskrit (bilangan bulat seperti jumlah barang) dan Kontinu (bisa berupa desimal seperti berat badan atau waktu).
+• Data Kualitatif (Kategorik): Nominal (label nama tanpa urutan seperti warna) dan Ordinal (memiliki tingkatan seperti skala kepuasan 1 sampai 5)
