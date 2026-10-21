@@ -1,7 +1,0 @@
-1. How well is the suplay chain performing?.
-2. which shipping mode have the highest late delivery rate ?.
-3. Which regions have the worst delivery performance?.
-4. How has delivery performance changed over time?.
-5. Which product categories experience more delivery delays?.
-6. is late delivery associated with lower order profitability?.
-7. Which operational areas should be prioritized for investigation?.

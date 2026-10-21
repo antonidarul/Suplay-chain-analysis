@@ -24,7 +24,7 @@ group by order_year_month
 order by late_delivery_rate_pct desc;
 
 
---Tren Bulanan Berdasarkan Shipping Mode
+
 with order_level as (
     select
         "Order Id",

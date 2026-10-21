@@ -31,8 +31,6 @@ from regional
 order by late_delivery_rate_pct desc;
 
 
--- Performa Wilayah dengan Memperhitungkan Shipping Mode
-
 with order_level as (
 	select
 		"Order Id",

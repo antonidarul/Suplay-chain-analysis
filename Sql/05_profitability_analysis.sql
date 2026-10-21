@@ -40,7 +40,6 @@ group by delivery_group
 order by delivery_group;
 
 
--- Wilayah & Shipping Mode terhadap Profit & Late Rate
 with order_level as(
 	select
 		"Order Id",
@@ -69,8 +68,7 @@ from order_level
 group by order_region, shipping_mode
 order by late_delivery_rate_pct desc, total_profit asc;
 
-	
--- Kategori Produk, Keterlambatan, dan Profitabilitas
+
 with order_level as(
 	select
 		"Order Id",
