@@ -1,14 +1,15 @@
 
 # Supply Chain Delivery Performance & Operational Risk Analysis
 
-Menganalisis performa pengiriman, mengidentifikasi pola keterlambatan berdasarkan metode pengiriman, waktu, dan wilayah, serta mengevaluasi hubungan antara ketepatan pengiriman dan profitabilitas order untuk membantu manajemen menentukan prioritas perbaikan operasional.
+Analyze delivery performance, identify patterns of delays based on delivery method, time, and region, and evaluate the relationship between delivery on-time performance and order profitability to help management prioritize operational improvements.
 
-## Tujuan Analysis
+## Objectives of the Analysis
 
-1. Mengukur delivery performance: Menghitung jumlah order, order terlambat, order tepat waktu, late delivery rate, dan rata-rata keterlambatan.
-2. Mengidentifikasi area berisiko: Membandingkan performa antar-shipping mode, wilayah, pasar, kategori, dan periode waktu.
-3. Mengevaluasi performa bisnis: Memeriksa apakah order yang terlambat memiliki pola profitabilitas berbeda dibandingkan order yang tepat waktu.
-4. Menyusun rekomendasi operasional: Menentukan area yang perlu diperiksa lebih lanjut dan metrik yang bisa dipakai untuk memantau perbaikan.
+1. Measure delivery performance: Calculate the number of orders, late orders, on-time orders, the late delivery rate, and the average delay.
+2. Identify high-risk areas: Compare performance across shipping modes, regions, markets, categories, and time periods.
+3. Evaluate business performance: Examine whether late orders exhibit different profitability patterns compared to on-time orders.
+4. Develop operational recommendations: Identify areas requiring further investigation and metrics that can be used to track improvements.
+
 
 ## Bussines Question 
 
@@ -29,7 +30,7 @@ Menganalisis performa pengiriman, mengidentifikasi pola keterlambatan berdasarka
 6. Business Report.
 
 # Insight & Recommendation
-# Business Insights
+
 ## Suplay Chain Performance
 **Overall assesment**: Poor/High Risk 
 
@@ -70,9 +71,9 @@ Although the percentage in central asia is slightly higher , the issues in weste
 - Tennis & Racquet: 65.22% late rate (23 orders).
 While these categories have the highest failure percentages, their low order volumes mean their overall business impact is relatively small.
 **2. Highest Delayed Volume**
-- Cleats: ~7,206 delayed items (57.14% late rate across 12,611 orders) Profit: $850.98K
-- Camping & Hiking: ~6,670 delayed items (56.86% late rate across 11,730 orders) Profit: $1.03M
-- Cardio Equipment: ~5,020 delayed items (57.48% late rate across 8,733 orders) Profit: $756.92K
+- Cleats: 7,206 delayed items (57.14% late rate across 12,611 orders) Profit: $850.98K
+- Camping & Hiking: 6,670 delayed items (56.86% late rate across 11,730 orders) Profit: $1.03M
+- Cardio Equipment: 5,020 delayed items (57.48% late rate across 8,733 orders) Profit: $756.92K
 
 while niche categories like Strength Training show a high delay rate (71.43%), they only account for 10 delayed items in total. Therefore, operational focus must be placed on high-volume categories like Cleats, Camping & Hiking, and Cardio Equipment, as they drive the vast majority of physical delivery delays.
 

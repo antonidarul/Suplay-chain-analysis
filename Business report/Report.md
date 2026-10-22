@@ -1,3 +1,4 @@
+
 ## Suplay Chain Performance
 **Overall assesment**: Poor/High Risk 
 
@@ -38,9 +39,9 @@ Although the percentage in central asia is slightly higher , the issues in weste
 - Tennis & Racquet: 65.22% late rate (23 orders).
 While these categories have the highest failure percentages, their low order volumes mean their overall business impact is relatively small.
 **2. Highest Delayed Volume**
-- Cleats: ~7,206 delayed items (57.14% late rate across 12,611 orders) Profit: $850.98K
-- Camping & Hiking: ~6,670 delayed items (56.86% late rate across 11,730 orders) Profit: $1.03M
-- Cardio Equipment: ~5,020 delayed items (57.48% late rate across 8,733 orders) Profit: $756.92K
+- Cleats: 7,206 delayed items (57.14% late rate across 12,611 orders) Profit: $850.98K
+- Camping & Hiking: 6,670 delayed items (56.86% late rate across 11,730 orders) Profit: $1.03M
+- Cardio Equipment: 5,020 delayed items (57.48% late rate across 8,733 orders) Profit: $756.92K
 
 while niche categories like Strength Training show a high delay rate (71.43%), they only account for 10 delayed items in total. Therefore, operational focus must be placed on high-volume categories like Cleats, Camping & Hiking, and Cardio Equipment, as they drive the vast majority of physical delivery delays.
 
