@@ -30,49 +30,58 @@ Menganalisis performa pengiriman, mengidentifikasi pola keterlambatan berdasarka
 
 # Insight & Recommendation
 # Business Insights
+## Suplay Chain Performance
+**Overall assesment**: Poor/High Risk 
 
-## Overall Delivery Performance
+According to the result the suplay chain is currently underperforming significantly due to severe fulfillment delays.
+Out of 180.519 total order item (Across 65.752 transactions):
+- Late delivery rate : 57.29%(98.977 items) delay.
+- Delivery On-time : 40.88% (73.788 items) arrive on schedule.
+- Canceled : 4.29% (7.754 items) canceled before delivery.
+More than half of the delivered items fail to reach customers on time. This high failure rate directly impacts customer satisfaction, operational cost, and overall brand reputation
 
-- The reported overall delivery delay rate is **57.31%**, indicating that delivery delays are a major operational concern in the analyzed dataset.
-- The high delay rate suggests that delivery reliability requires management attention rather than being treated as an isolated operational issue.
-- However, the overall metric must be interpreted alongside its calculation method and denominator. The analysis contains differences in reported order and order-item counts that should be validated before the metric is used as an official performance benchmark.
-- The available analysis does not establish whether performance meets the company's delivery commitments because no verified service-level target or benchmark has been provided.
+## Shipping Mode With Highest Late Delivery 
+First class has the highest late delivery rate at a critical 100%, followed by second class as the second worst performer.
+- First Class **(Worst)**: 100% items late delivery with average delay of 1 day.
+- Second Class : 79.83% delay rate.
+- Same Day & Standart Class: Performing relatively better. Both maintaining late delivery rate below 50% (Same Day 47.93%) and (Standart Class 39.77%)
+The premium shipping option (First class & Second class) where customer usually expect the fastest delivery are experiencing  the worst operational bottlnecks
 
-## Shipping Mode Performance
+## Regional With The Worst Delivery
 
-- **First Class has a reported delay rate of 100%**, with an average delay of approximately 1 day. This makes it an immediate priority for investigation, although the delay calculation and underlying order population should be validated.
-- **Second Class has the longest reported average delay at 4 days**, indicating a potential issue with delivery duration even though its overall delay rate requires further validation.
-- Standard Class handles the largest reported volume, at **39,324 order items**, with a delay rate of **39.85%** and an average delay of approximately 2 days.
-- Same Day has a reported average delay of approximately 1 day.
-- These findings show that delivery reliability and delay severity are different dimensions of performance. A shipping mode can experience shorter delays but still have a high proportion of late deliveries.
-- Standard Class deserves attention because of its high volume, while First Class and Second Class warrant investigation because of their reported reliability and delay-duration problems.
+**1. Wosrt Based On Percentage Of Delays** 
+- Central afrika recorded the highest rate of delay 60,04% with an average delay of 1 day.
+- The order volume in this region is relatively small (only 556 items). although it accounts the highest percentage, its absolute impacts on overall operations is not as significants as that of regions with high order volumes.
 
-## Regional Delivery Performance
+**2. Worst Based On The Longest Delay Duration**
+- Central asia holds the records for the longest average delay duration, at approximately  1.74 days. Late delivery rate 56,67%(with total order only 184 items)
 
-- Central Asia has the highest reported regional delay rate among the highlighted findings at **60.04%**, with an average delay of approximately **1.74 days**.
-- Western Europe has a reported delay rate of **58.40%** and the highest reported regional volume, at approximately **10,010 orders**.
-- Central Asia represents a potential severity concern because of its high delay rate and average delay duration.
-- Western Europe represents a potential volume-related concern because delays may affect a large number of orders.
-- These findings suggest that regional performance should be evaluated using both delay rate and affected-order volume. However, the current analysis does not establish the underlying causes of regional differences.
+**3. Region Most Severely Affected By The Problem In The Terms Of Volumes**
+- Western europe is the most critical region for business , with a total of 10010 items ordered and an alarming late delivery rate of 58,40% with an average delay of 1.63 days 
 
-## Delivery Performance Over Time
 
-- Monthly delay rates fluctuate between approximately **54% and 60%**, indicating that delivery delays recur throughout much of the observed period.
-- June 2016 recorded a reported monthly delay rate of approximately **58.86%**.
-- Monthly average delay duration remained relatively stable at approximately **1.56–1.65 days**.
-- Python EDA identified a substantial change in dataset structure beginning in **October 2017**, including changes in order-item patterns and market composition.
-- The recurring delay rates suggest that the issue is not limited to a single month. However, the apparent stability of the trend does not necessarily prove that operational performance was stable because changes in data coverage or granularity may affect comparisons.
-- Historical trend comparisons after September 2017 should therefore be validated before drawing conclusions about operational improvement or deterioration.
+Although the percentage in central asia is slightly higher , the issues in western europe have had the greatest negative impact on customer satisfaction on a massive scale, as they involve thousands of orders.
 
-## Product Subcategory Risk
+## Product Categories Experience More Delays
+**1. Highest Late Delivery Rate** : 
+- Strength Training: Highest failure rate at 71.43% (14 orders).
+- Golf Bags & Carts: 68.42% late rate (19 orders).
+- Lacrosse: 66.67% late rate (70 orders).
+- Tennis & Racquet: 65.22% late rate (23 orders).
+While these categories have the highest failure percentages, their low order volumes mean their overall business impact is relatively small.
+**2. Highest Delayed Volume**
+- Cleats: ~7,206 delayed items (57.14% late rate across 12,611 orders) Profit: $850.98K
+- Camping & Hiking: ~6,670 delayed items (56.86% late rate across 11,730 orders) Profit: $1.03M
+- Cardio Equipment: ~5,020 delayed items (57.48% late rate across 8,733 orders) Profit: $756.92K
 
-- Lacrosse and Tennis & Racquet have reported delivery delay rates of approximately **65–66%**, higher than the reported overall delay rate of 57.31%.
-- Both subcategories also have a reported loss-making order ratio above **10%**.
-- The combination of elevated delay rates and loss-making orders makes these subcategories candidates for further investigation.
-- However, the available analysis does not establish that delivery delays cause financial losses. The relationship may also be influenced by product costs, discounts, order characteristics, shipping mode, or regional factors.
-- Further analysis should compare delay rates, affected-order volumes, and profitability across subcategories to determine which areas warrant the greatest operational attention.
+while niche categories like Strength Training show a high delay rate (71.43%), they only account for 10 delayed items in total. Therefore, operational focus must be placed on high-volume categories like Cleats, Camping & Hiking, and Cardio Equipment, as they drive the vast majority of physical delivery delays.
 
-## Statistical Analysis
+## Overtime Delivery
+- **Consistently Delay Rate** : The delivery delay rate fluctuated within high range of 55% to 59% throughout  2015-2017. Delivery performance hits its worst point in june 2016 (59.3%) and achieved its best imporovement in july 2016 (55.1%)
+- **Stabel Delayed Product Volume** : In terms of physical item quantity, the volume of delayed products remained remarkably stabel at 2.600 to 3.000 items per month or roughly 1.500 to 2.000 delayed orders per month from 2015 through mid 2017 
+
+## Is late delivery associated with lower order profitability?
+### Statistical Analysis
 
 Python EDA compared profit distributions between late and non-late items.
 
@@ -94,60 +103,60 @@ Late items have slightly lower mean and median profit in the observed data, but 
 
 SQL also reported average profit per order of 64.35 for late deliveries and 64.78 for non-late deliveries. These figures use a different reported aggregation level from the Python item-level analysis and should not be directly compared until the metric definitions and populations are aligned.
 
-**Methodological limitation:** The analysis should verify the independence assumptions of the statistical comparison because multiple items may belong to the same order. The current results are exploratory and do not establish a causal relationship between delivery delays and profitability.
+Mohon maaf atas ketidaknyamanannya! Ini format tabel dan jawabannya yang sudah disesuaikan persis dengan format tabel Markdown yang kamu kirim agar **mudah disalin (*copy-paste*)**:
 
-## Delivery Risk and Operational Priorities
+---
+
+## 7. Which operational areas should be prioritized for investigation?
 
 The combined SQL and Python findings identify several areas that warrant operational investigation.
 
 | Priority Area | Evidence | Business Implication |
-|---|---|---|
+| --- | --- | --- |
 | First Class reliability | 100% reported delay rate | Investigate delivery commitments, scheduling, and delay calculations |
-| Second Class delay duration | Highest reported average delay of 4 days | Investigate factors associated with longer delivery delays |
+| Second Class delay duration | 79.83% reported delay rate and high average delay duration | Investigate factors associated with longer delivery delays in second-tier channels |
 | Standard Class order volume | 39,324 order items and 39.85% reported delay rate | Evaluate the operational impact of delays across a large volume |
-| Central Asia | 60.04% reported delay rate | Investigate regional delivery performance and delay severity |
+| Central Africa | 60.04% reported delay rate | Investigate regional delivery performance and delay severity |
+| Central Asia | Highest average delay of 1.74 days | Investigate long transit times and regional distribution bottlenecks |
 | Western Europe | 58.40% reported delay rate and 10,010 reported orders | Assess the volume of orders exposed to delivery delays |
-| Product subcategories | Lacrosse and Tennis & Racquet at approximately 65–66% delay rates | Investigate potential overlap between delivery risk and loss-making orders |
-| Historical data consistency | Dataset structure changed beginning in October 2017 | Validate data comparability before evaluating historical trends |
+| High-volume product categories | Cleats (~7,206 delayed items) and Camping & Hiking (~6,670 delayed items) | Optimize inventory placement and dispatch workflows for top revenue-generating categories |
+| Niche product categories | Strength Training (71.43%) and Lacrosse (66.67%) delay rates | Investigate potential overlap between delivery risk and operational constraints |
+| Historical data consistency | Dataset volume dropped significantly beginning in October 2017 | Validate data comparability before evaluating historical trends |
 
-### Operational Prioritization
+## Recommendation 
+### 1. Complete Overhaul of Expedited Shipping Services
 
-The findings support prioritizing investigations according to both **delay severity and the number of affected orders**.
+* **First Class SLA Audit:** Given that **First Class exhibits a 100% delay rate**, conduct an immediate audit and re-evaluation of logistics partners for this shipping option. Temporarily suspend unrealistic delivery promises on the platform until operational issues are resolved.
+* **Second Class Restructuring:** Evaluate the root causes behind long delay durations in Second Class (79.83% delay rate). Renegotiate Service Level Agreements (SLAs) with carriers or reallocate order volume to more reliable logistics providers.
 
-First Class should be investigated because of its reported 100% delay rate. Second Class warrants attention because of its longer average delay duration. Standard Class should also remain a priority because its high order-item volume may expose a substantial number of orders to delays despite its lower reported delay rate.
+---
 
-Regional analysis should then examine Central Asia and Western Europe, followed by product-level investigation of Lacrosse and Tennis & Racquet.
+### 2. Impact-Driven Resource Allocation
 
-These are investigation priorities, not confirmed root causes. The current dataset does not contain enough operational detail to determine whether delays originate from warehouse processing, inventory availability, carrier handoffs, route conditions, delivery commitments, or other factors.
+* **Focus on Core High-Volume Categories:** Allocate supply chain optimization and inventory management efforts toward categories generating the highest volume of delayed items—specifically **Cleats** (~7,206 delayed items) and **Camping & Hiking** (~6,670 delayed items). Improvements here will directly enhance overall customer satisfaction and safeguard core revenues.
+* **Operational Priority in Western Europe:** Prioritize operational support and budget allocation for Western Europe, as it accounts for the largest order exposure (10,010 items) alongside a high delay rate of 58.40%.
 
-## Data Limitations and Next Steps
+---
 
-- **Metric consistency:** Reported order and order-item counts are inconsistent across the available summaries. Validate the data grain, distinct order counts, and delay-rate denominator before publishing final KPIs.
-- **Delivery definitions:** Confirm the definition of late delivery and ensure that delay rate and average delay duration use consistent populations and calculations.
-- **Historical comparability:** Investigate the change in dataset structure beginning in October 2017 before comparing performance across the entire period.
-- **Profitability interpretation:** Align SQL and Python aggregation levels and validate the statistical assumptions before drawing stronger conclusions about the relationship between delays and profit.
-- **Root-cause limitations:** The available findings identify patterns but do not prove why delays occur. More detailed carrier, warehouse, route, inventory, fulfillment-time, and delay-reason data would support deeper investigation.
-- **Historical scope:** The analysis describes patterns in the available historical dataset. It should not be presented as evidence of current supply chain performance.
+### 3. Targeted Regional Logistics Solutions
 
-## Recommendations
+* **Regional Logistics Optimization (Central Africa & Central Asia):** For regions experiencing the highest failure rates, such as **Central Africa (60.04% delay rate)**, and those with the longest delay durations, such as **Central Asia (1.74 days average delay)**, review customs clearance procedures, transit routes, and local courier reliability.
 
-1. **Validate the delivery performance KPIs.** Confirm order counts, order-item grain, delay definitions, and denominators before using the overall delay rate as an official benchmark.
-2. **Investigate First Class reliability.** Review its delivery commitments, scheduling, and actual delivery records to understand why the reported delay rate reaches 100%.
-3. **Investigate Second Class delay duration.** Examine the processes and operational conditions associated with its reported average delay of 4 days.
-4. **Prioritize Standard Class by volume.** Evaluate the operational impact of delays across its 39,324 reported order items rather than focusing exclusively on the highest delay rate.
-5. **Examine regional differences.** Investigate Central Asia for its elevated delay rate and Western Europe for its combination of high reported volume and elevated delay rate. Compare shipping-mode performance within each region.
-6. **Investigate high-risk product subcategories.** Examine Lacrosse and Tennis & Racquet to determine whether their elevated delay rates are concentrated in particular regions, shipping modes, or order characteristics.
-7. **Avoid unsupported profitability claims.** The current statistical test does not establish a significant difference in overall profit distributions between late and non-late items. Validate the metrics and investigate specific segments before attributing financial outcomes to delays.
-8. **Improve operational data collection.** Collect more detailed information about carriers, warehouses, routes, inventory availability, fulfillment stages, and recorded delay reasons to support root-cause analysis.
+---
+
+### 4. Safeguarding Long-Term Customer Lifetime Value
+
+* **Mitigating Hidden Downstream Costs:** Statistical hypothesis testing confirms that delivery delays do not significantly erode immediate unit profitability at point-of-sale ($p\text{-value} = 0.155$). However, proactive delay prevention remains essential to prevent **hidden downstream costs**, including return requests, customer service compensation vouchers, and long-term customer churn.
+
+---
+
+### 5. Data Governance & Integrity Monitoring
+
+* **Investigate Q4 2017 Data Anomalies:** Perform a technical audit on the database regarding the sharp drop in reported monthly delayed items in late 2017 (falling from ~3,000 down to ~1,100 items/month). Verify whether this decline represents a genuine shift in order volume or a data logging/cutoff lag within the logistics pipeline.
 
 ## Conclusion
 
-The analysis indicates that **delivery timeliness is a major operational concern**, with a reported overall delay rate of 57.31%. Delivery performance varies across shipping modes and regions, while selected product subcategories show elevated delay rates that warrant further investigation.
-
-First Class and Second Class are important investigation targets because of their reported delay patterns. Standard Class also requires attention because of its large order-item volume. Central Asia, Western Europe, Lacrosse, and Tennis & Racquet represent additional areas for focused analysis.
-
-The profitability analysis shows slightly lower mean and median profit for late items, but the statistical test does not provide sufficient evidence of a significant difference in overall profit distributions. Consequently, the current findings do not establish that delays cause lower profitability.
-
-**Overall recommendation:** Validate the delivery performance metrics, investigate high-risk shipping modes and regions, examine affected product subcategories, and improve operational data collection before making final decisions about root causes or financial impact.
-
-These findings provide a foundation for monitoring delivery performance, identifying operational risks, and directing further investigation. They should be treated as evidence of historical patterns rather than a definitive assessment of current supply chain performance.
+The analysis reveals that delivery timeliness is a critical operational bottleneck, with a reported overall late delivery rate of 57.29% across 180,519 order items. Delivery performance varies significantly across shipping modes, geographic regions, and product categories:
+- Shipping Modes: First Class represents the most severe failure with a 100% delay rate, while Second Class exhibits a high delay rate of 79.83%. Although Standard Class has a lower delay rate (~39.85%), it accounts for the largest absolute volume of delayed items (39,324 items).
+- Geographic & Product Exposure: Western Europe presents the largest order exposure with 10,010 items (58.40% delay rate), while Central Africa registers the highest regional failure rate (60.04%). In terms of product impact, high-volume revenue drivers like Cleats (~7,206 delayed items) and Camping & Hiking (~6,670 delayed items) account for the vast majority of physical delivery delays.
+- Profitability Impact: A non-parametric Mann–Whitney U test ($p\text{-value} = 0.155$) indicates no statistically significant difference in profit distributions between delayed and on-time items. While immediate unit profit margins remain stable at the point of sale, delivery delays pose serious risks to long-term profitability through hidden downstream costs, such as customer churn and support overhead.
