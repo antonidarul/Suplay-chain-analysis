@@ -64,19 +64,21 @@ The premium shipping option (First class & Second class) where customer usually 
 Although the percentage in central asia is slightly higher , the issues in western europe have had the greatest negative impact on customer satisfaction on a massive scale, as they involve thousands of orders.
 
 ## Product Categories Experience More Delays
-**1. Highest Late Delivery Rate** : 
-- Strength Training: Highest failure rate at 71.43% (14 orders).
-- Golf Bags & Carts: 68.42% late rate (19 orders).
-- Lacrosse: 66.67% late rate (70 orders).
-- Tennis & Racquet: 65.22% late rate (23 orders).
-While these categories have the highest failure percentages, their low order volumes mean their overall business impact is relatively small.
-**2. Highest Delayed Volume**
-- Cleats: 7,206 delayed items (57.14% late rate across 12,611 orders) Profit: $850.98K
-- Camping & Hiking: 6,670 delayed items (56.86% late rate across 11,730 orders) Profit: $1.03M
-- Cardio Equipment: 5,020 delayed items (57.48% late rate across 8,733 orders) Profit: $756.92K
+**1. Highest Late Delivery Rate**
+- Golf Bags & Carts: Had the highest failure rate proportionally, at 68.85% (with 42 items delayed out of a total of 61 items).
+- Lacrosse: Followed in second place with a delay rate of 62.61% (206 items delayed out of 343 items).
+- Pet Supplies: Has a late delivery rate of 61.44% (290 late items out of 492).
+- Cameras: The failure rate reached 61.21% (344 late items out of 592).
 
-while niche categories like Strength Training show a high delay rate (71.43%), they only account for 10 delayed items in total. Therefore, operational focus must be placed on high-volume categories like Cleats, Camping & Hiking, and Cardio Equipment, as they drive the vast majority of physical delivery delays.
+Although these categories account for the highest percentage of delay risk (over 60%), their physical demand volume is relatively small, so their absolute impact on overall warehouse capacity is not significant.
 
+**2. Highest Delayed Volume & Business Impact**
+- Cleats: This category accounted for the largest share of late items in operations, with 13,496 late items (a late rate of 57.40% of the total 24,551 items) and generated very high total sales and profit ($494.64K profit).
+- Fishing: A massive operational burden with 9,516 late items (a late rate of 57.34% of the total 17,325 items) and profit reaching $756.22K.
+- Women’s Apparel: Recorded 11,476 late items (a delay rate of 57.05% of the total 21,035 items) with a profit of $350.42K.
+- Men’s Footwear & Camping & Hiking: Each category recorded more than 12,121 and 7,487 late items, respectively, with profit values of $311.90K and $427.46K, respectively.
+
+Categories such as Golf Bags & Carts do indeed show the highest percentage of delays (68.85%), but in absolute terms, the number is small (only 42 delayed items). In contrast, massive categories such as Cleats, Fishing, Women’s Apparel, and Men’s Footwear account for tens of thousands of delayed items. Therefore, efforts to improve daily logistics operations and warehouse management must prioritize these high-volume categories, as they account for the majority of supply chain bottlenecks and have a massive impact on customer satisfaction.
 ## Overtime Delivery
 - **Consistently Delay Rate** : The delivery delay rate fluctuated within high range of 55% to 59% throughout  2015-2017. Delivery performance hits its worst point in june 2016 (59.3%) and achieved its best imporovement in july 2016 (55.1%)
 - **Stabel Delayed Product Volume** : In terms of physical item quantity, the volume of delayed products remained remarkably stabel at 2.600 to 3.000 items per month or roughly 1.500 to 2.000 delayed orders per month from 2015 through mid 2017 
@@ -103,8 +105,6 @@ At the 5% significance level, the result does not provide sufficient evidence to
 Late items have slightly lower mean and median profit in the observed data, but the statistical test does not establish a significant difference in the overall profit distributions. This finding should not be interpreted as proof that delivery delays have no financial consequences.
 
 SQL also reported average profit per order of 64.35 for late deliveries and 64.78 for non-late deliveries. These figures use a different reported aggregation level from the Python item-level analysis and should not be directly compared until the metric definitions and populations are aligned.
-
-Mohon maaf atas ketidaknyamanannya! Ini format tabel dan jawabannya yang sudah disesuaikan persis dengan format tabel Markdown yang kamu kirim agar **mudah disalin (*copy-paste*)**:
 
 ---
 
