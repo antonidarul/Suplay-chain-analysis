@@ -100,27 +100,21 @@ order by late_delivery_rate_pct desc;
 
 
 --4. Which product categories experience more delivery delays?.
-with order_level as(
-	select
-		"Order Id",
-		min("Category Name") as product_category,
-		max(is_canceled) as order_canceled,
-		max(is_delayed) as order_delayed,
-		max("Sales") as order_sales,
-		max("Order Profit Per Order") as order_profit
-	from shipments
-	group by "Order Id"
-)
-select
-	product_category,
-	count(*) as total_order,
-	round(100.0 * count(*) filter(where order_canceled = 0 and order_delayed = 1)/
-	nullif(count(*) filter (where order_canceled = 0),0),2) as late_delivery_rate_pct,
-		round(sum(order_sales)::numeric,2) as total_sales,
-	round(sum(order_profit)::numeric,2) as total_profit
-from order_level
-group by product_category
-order by total_order desc ;
+SELECT 
+    "Category Name" AS product_category,
+    COUNT(*) AS total_items,
+    SUM(CASE WHEN "Delivery Status" <> 'Shipping canceled' THEN 1 ELSE 0 END) AS valid_items,
+    SUM(CASE WHEN "Delivery Status" <> 'Shipping canceled' AND "Days for shipping (real)" > "Days for shipment (scheduled)" THEN 1 ELSE 0 END) AS delayed_item_volume,
+    ROUND(
+        100.0 * SUM(CASE WHEN "Delivery Status" <> 'Shipping canceled' AND "Days for shipping (real)" > "Days for shipment (scheduled)" THEN 1 ELSE 0 END) 
+        / NULLIF(SUM(CASE WHEN "Delivery Status" <> 'Shipping canceled' THEN 1 ELSE 0 END), 0), 
+        2
+    ) AS delayed_rate_pct,
+    ROUND(SUM("Sales"::numeric), 2) AS total_sales,
+    ROUND(SUM("Order Profit Per Order"::numeric), 2) AS total_profit
+FROM shipments
+GROUP BY "Category Name"
+ORDER BY delayed_rate_pct DESC;
 
 
 -- 5. How has delivery performance changed over time?.
