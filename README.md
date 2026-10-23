@@ -120,7 +120,7 @@ The combined SQL and Python findings identify several areas that warrant operati
 | Central Africa | 60.04% reported delay rate | Investigate regional delivery performance and delay severity |
 | Central Asia | Highest average delay of 1.74 days | Investigate long transit times and regional distribution bottlenecks |
 | Western Europe | 58.40% reported delay rate and 10,010 reported orders | Assess the volume of orders exposed to delivery delays |
-| High-volume product categories | Cleats (~7,206 delayed items) and Camping & Hiking (~6,670 delayed items) | Optimize inventory placement and dispatch workflows for top revenue-generating categories |
+| High-volume product categories | Cleats (7,206 delayed items) and Camping & Hiking (6,670 delayed items) | Optimize inventory placement and dispatch workflows for top revenue-generating categories |
 | Niche product categories | Strength Training (71.43%) and Lacrosse (66.67%) delay rates | Investigate potential overlap between delivery risk and operational constraints |
 | Historical data consistency | Dataset volume dropped significantly beginning in October 2017 | Validate data comparability before evaluating historical trends |
 
