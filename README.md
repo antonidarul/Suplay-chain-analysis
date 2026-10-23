@@ -134,7 +134,7 @@ The combined SQL and Python findings identify several areas that warrant operati
 
 ### 2. Impact-Driven Resource Allocation
 
-* **Focus on Core High-Volume Categories:** Allocate supply chain optimization and inventory management efforts toward categories generating the highest volume of delayed items—specifically **Cleats** (~7,206 delayed items) and **Camping & Hiking** (~6,670 delayed items). Improvements here will directly enhance overall customer satisfaction and safeguard core revenues.
+* **Focus on Core High-Volume Categories:** Allocate supply chain optimization and inventory management efforts toward categories generating the highest volume of delayed items specifically **Cleats** (7,206 delayed items) and **Camping & Hiking** (6,670 delayed items). Improvements here will directly enhance overall customer satisfaction and safeguard core revenues.
 * **Operational Priority in Western Europe:** Prioritize operational support and budget allocation for Western Europe, as it accounts for the largest order exposure (10,010 items) alongside a high delay rate of 58.40%.
 
 ---
@@ -153,11 +153,11 @@ The combined SQL and Python findings identify several areas that warrant operati
 
 ### 5. Data Governance & Integrity Monitoring
 
-* **Investigate Q4 2017 Data Anomalies:** Perform a technical audit on the database regarding the sharp drop in reported monthly delayed items in late 2017 (falling from ~3,000 down to ~1,100 items/month). Verify whether this decline represents a genuine shift in order volume or a data logging/cutoff lag within the logistics pipeline.
+* **Investigate Q4 2017 Data Anomalies:** Perform a technical audit on the database regarding the sharp drop in reported monthly delayed items in late 2017 (falling from 3,000 down to 1,100 items/month). Verify whether this decline represents a genuine shift in order volume or a data logging/cutoff lag within the logistics pipeline.
 
 ## Conclusion
 
 The analysis reveals that delivery timeliness is a critical operational bottleneck, with a reported overall late delivery rate of 57.29% across 180,519 order items. Delivery performance varies significantly across shipping modes, geographic regions, and product categories:
-- Shipping Modes: First Class represents the most severe failure with a 100% delay rate, while Second Class exhibits a high delay rate of 79.83%. Although Standard Class has a lower delay rate (~39.85%), it accounts for the largest absolute volume of delayed items (39,324 items).
-- Geographic & Product Exposure: Western Europe presents the largest order exposure with 10,010 items (58.40% delay rate), while Central Africa registers the highest regional failure rate (60.04%). In terms of product impact, high-volume revenue drivers like Cleats (~7,206 delayed items) and Camping & Hiking (~6,670 delayed items) account for the vast majority of physical delivery delays.
+- Shipping Modes: First Class represents the most severe failure with a 100% delay rate, while Second Class exhibits a high delay rate of 79.83%. Although Standard Class has a lower delay rate (39.85%), it accounts for the largest absolute volume of delayed items (39,324 items).
+- Geographic & Product Exposure: Western Europe presents the largest order exposure with 10,010 items (58.40% delay rate), while Central Africa registers the highest regional failure rate (60.04%). In terms of product impact, high-volume revenue drivers like Cleats (7,206 delayed items) and Camping & Hiking (~6,670 delayed items) account for the vast majority of physical delivery delays.
 - Profitability Impact: A non-parametric Mann–Whitney U test ($p\text{-value} = 0.155$) indicates no statistically significant difference in profit distributions between delayed and on-time items. While immediate unit profit margins remain stable at the point of sale, delivery delays pose serious risks to long-term profitability through hidden downstream costs, such as customer churn and support overhead.
